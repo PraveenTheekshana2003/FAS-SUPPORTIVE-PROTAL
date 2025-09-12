@@ -1051,3 +1051,16 @@ a {
     font-size: 50%;
   }
 }
+
+.sub{
+  font-size:32px; 
+  color: #224bcf;
+  text-decoration:underline; 
+}
+.about-text{
+background-color: lightgrey;
+  width: 800px;
+  border: 5px solid #224bcf;
+  padding: 50px;
+  margin: 20px;
+}
