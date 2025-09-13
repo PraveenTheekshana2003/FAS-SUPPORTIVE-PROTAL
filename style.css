@@ -1058,9 +1058,24 @@ a {
   text-decoration:underline; 
 }
 .about-text{
-background-color: lightgrey;
-  width: 800px;
-  border: 5px solid #224bcf;
-  padding: 50px;
-  margin: 20px;
+  width: 600px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.FAS{
+  margin-top: 60px;
+   margin-left: 50px;
+}
+.circle{
+   width: 500px;
+    height: 250px;
+    background-color: #224bcf;
+    border-top-left-radius: 250px;
+    border-top-right-radius: 250px;
+    position: absolute;
+    left: 150px;
+    position: relative; 
+    transform: rotate(270deg);
+    float: right;
+    top: -100;
 }
