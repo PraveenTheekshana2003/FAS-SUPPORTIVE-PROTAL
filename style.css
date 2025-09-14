@@ -1082,3 +1082,140 @@ a {
 
 }
 
+
+/* coming soon css */
+.background {
+    width: 80px;
+    height: 70px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+}
+
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.shape:first-child{
+    background: linear-gradient(
+        to right,
+        #4db10a,
+        #d23179
+    );
+    height: 100px;
+    width: 100px;
+    left: -550px;
+    top: 650px;
+}
+
+.shape:nth-child(2){
+    background: linear-gradient(
+        to right,
+        #ee1bc0,
+        #138bb7
+    );
+    height: 100px;
+    width: 100px;
+    left: 280px;
+    top: 650px;
+}
+
+.shape:nth-child(3){
+    background: linear-gradient(
+        to right,
+        #b62609,
+        #680ec9
+    );
+    height: 100px;
+    width: 100px;
+    left: -425px;
+    top: 1000px;
+}
+
+.shape:nth-child(4){
+    background: linear-gradient(
+        to right,
+        #33d5e4,
+        #6ad627
+    );
+    height: 100px;
+    width: 100px;
+    left: 550px;
+    top: 890px;
+}
+
+.shape:nth-child(5){
+    background: linear-gradient(
+        to right,
+        #33d5e4,
+        #6ad627
+    );
+    height: 100px;
+    width: 100px;
+    left: -150px;
+    top: 550px;
+}
+
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    height: 100px;
+    width: 100px;
+    top: 1050px;
+    right: -140px;
+}
+ 
+.wrapper {
+background-image: linear-gradient(to right, #2E7DF0 , #03254D);
+border-radius: 10px;
+backdrop-filter: blur(10px);
+border: 2px solid rgba(255,255,255,0.1);
+box-shadow: 0 0 40px rgba(8,7,16,0.6);
+}
+
+.wrapper {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1500px;
+    height: 700px;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 0;
+    box-shadow: 2px 10px rgb(159, 151, 151);
+}
+
+.wrapper .about{
+color: white;
+font-weight: 800;
+font-size: 128px;
+}
+                                     
+.social-icons a:hover::before,
+.wrapper .icon:hover::before,
+.buttons button:hover:before{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+border-radius: 50%;
+background: #ecf0f3;
+box-shadow: inset -3px -3px 7px #ffffff,
+          inset 3px 3px 5px #ceced1;
+}
+
+/* coming soon css */
