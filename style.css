@@ -1062,7 +1062,8 @@ a {
 .sub{
   font-size:32px; 
   color: #224bcf;
-  text-decoration:underline; 
+  text-decoration:underline;
+  font-weight: bold; 
 }
 .about-text{
   width: 600px;
