@@ -952,6 +952,13 @@ a {
   background: #f5f5f5;
 }
 
+.footer-image {
+  width : 300px;
+  height: 300px;
+  position: relative;
+  top: -30px;
+}
+
 .footer .box-container {
   display: -ms-grid;
   display: grid;
