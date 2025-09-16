@@ -1,0 +1,154 @@
+/* ================================
+   Responsive CSS (mobile + tablet)
+   ================================ */
+
+/* Large Desktops (1200px and down) */
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+  section {
+    padding: 3rem 2rem;
+  }
+}
+
+/* Tablets (1024px and down) */
+@media (max-width: 1024px) {
+  .wrapper {
+    width: 95%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .about-text {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .FAS {
+    margin: 40px auto;
+    text-align: center;
+  }
+
+  .about_image {
+    float: none;
+    display: block;
+    margin: 20px auto;
+    max-width: 90%;
+  }
+
+  .footer-image {
+    width: 200px;
+    height: auto;
+  }
+}
+
+/* Tablets and Small Laptops (768px and down) */
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .header {
+    padding: 2rem;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: #224bcf;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .header .navbar ul li {
+    width: 100%;
+  }
+
+  .header .navbar ul li ul {
+    width: 100%;
+    position: relative;
+  }
+
+  .top-row h1 {
+    font-size: 2.5rem;
+  }
+
+  .content h3 {
+    font-size: 2rem;
+  }
+
+  .content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+
+  .about .content h3 {
+    font-size: 3rem;
+  }
+
+  .main-video video {
+    width: 95%;
+    border-width: .2rem;
+  }
+
+  .wrapper {
+    width: 95%;
+    height: auto;
+    font-size: 2rem;
+  }
+
+  .wrapper .about {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .about-text {
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .video {
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+  }
+
+  .footer-image {
+    width: 150px;
+    height: auto;
+  }
+}
+
+/* Small Phones (480px and down) */
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+
+  .btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 1.2rem;
+  }
+
+  .wrapper {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .wrapper .about {
+    font-size: 2rem;
+  }
+
+  .footer .credit {
+    font-size: 1.4rem;
+    padding: 1rem;
+  }
+}
