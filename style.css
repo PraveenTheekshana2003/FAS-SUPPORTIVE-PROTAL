@@ -1,3 +1,4 @@
+/* ===== Global Styles ===== */
 * {
   margin: 0;
   padding: 0;
@@ -6,23 +7,22 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; /* 1rem = 10px */
   overflow-x: hidden;
 }
 
 body {
   background: linear-gradient(to right, #0a3d62, #3c6382);
   overflow-x: hidden;
+  color: #fff;
 }
 
-/* Background circles */
+/* ===== Background Shapes ===== */
 .background {
-  width: 80px;
-  height: 70px;
   position: absolute;
-  transform: translate(-50%, -50%);
-  left: 50%;
   top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .background .shape {
@@ -44,37 +44,36 @@ body {
   bottom: -80px;
 }
 
-/* Wrapper */
+/* ===== Wrapper (main container) ===== */
 .wrapper {
-  width: 1500px;
-  height: 700px;
+  max-width: 1200px;
+  width: 95%;
   margin: 80px auto;
   padding: 30px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   backdrop-filter: blur(15px);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  color: white;
-  font-size: 3rem;
   text-align: center;
 }
 
 .wrapper .about {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bold;
   margin-bottom: 30px;
 }
 
-/* About section */
+/* ===== About Text ===== */
 .about-text {
-  width: 600px;
-  margin-left: 50px;
+  max-width: 700px;
+  margin: 20px auto;
   font-size: 1.8rem;
   line-height: 1.8;
   text-align: justify;
+  padding: 0 10px;
 }
 
-/* Footer */
+/* ===== Footer ===== */
 .footer {
   text-align: center;
   margin-top: 50px;
@@ -82,22 +81,22 @@ body {
 }
 
 .footer-image {
-  width: 250px;
+  max-width: 250px;
+  width: 100%;
   height: auto;
   margin-bottom: 20px;
 }
 
 .footer .credit {
   font-size: 1.6rem;
-  color: #fff;
 }
 
-/* Buttons */
+/* ===== Buttons ===== */
 .btn {
   display: inline-block;
   margin: 10px;
   padding: 1rem 2rem;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: white;
   background: linear-gradient(to right, #23a2f6, #1845ad);
   border: none;
@@ -112,19 +111,19 @@ body {
   transform: translateY(-2px);
 }
 
-/* Video */
+/* ===== Video ===== */
 .video {
   display: block;
+  max-width: 100%;
+  height: auto;
   margin: 20px auto;
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
 
-/* Typography */
+/* ===== Typography ===== */
 .top-row h1 {
   font-size: 4rem;
-  color: #fff;
-  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -139,47 +138,49 @@ body {
   margin-bottom: 20px;
 }
 
-/* ================= RESPONSIVE FIXES ================= */
+/* ===== Responsive Design ===== */
 
-/* For tablets and medium devices */
+/* Tablets */
 @media (max-width: 1024px) {
   .wrapper {
-    width: 95%;
-    height: auto;
     padding: 20px;
   }
 
+  .wrapper .about {
+    font-size: 3.5rem;
+  }
+
   .about-text {
-    width: 90%;
-    margin: 20px auto;
-  }
-
-  .FAS {
-    margin: 40px auto;
-    text-align: center;
-  }
-
-  .about_image {
-    float: none;
-    display: block;
-    margin: 20px auto;
-    max-width: 90%;
+    font-size: 1.6rem;
   }
 
   .footer-image {
-    width: 200px;
-    height: auto;
-  }
-
-  .background {
-    display: none; /* hide floating shapes for better readability */
+    max-width: 200px;
   }
 }
 
-/* For mobile phones */
+/* Mobile Phones */
 @media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+
+  .wrapper {
+    margin: 40px auto;
+    padding: 20px;
+  }
+
+  .wrapper .about {
+    font-size: 3rem;
+  }
+
+  .about-text {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
   .top-row h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   .content h3 {
@@ -187,41 +188,15 @@ body {
   }
 
   .content p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-  }
-
-  .wrapper {
-    width: 95%;
-    height: auto;
-    font-size: 2rem;
-    padding: 15px;
-  }
-
-  .wrapper .about {
-    font-size: 3rem;
-    text-align: center;
-  }
-
-  .about-text {
-    width: 100%;
-    margin: 10px auto;
-    text-align: center;
-  }
-
-  .video {
-    width: 100%;
-    height: auto;
-    box-shadow: none;
+    font-size: 1.4rem;
   }
 
   .footer-image {
-    width: 150px;
-    height: auto;
+    max-width: 150px;
   }
 }
 
-/* For very small phones */
+/* Very Small Phones */
 @media (max-width: 480px) {
   html {
     font-size: 50%;
@@ -229,21 +204,18 @@ body {
 
   .btn {
     padding: 0.7rem 1.2rem;
-    font-size: 1.2rem;
-  }
-
-  .wrapper {
-    width: 100%;
-    height: auto;
-    padding: 15px;
+    font-size: 1.3rem;
   }
 
   .wrapper .about {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .footer .credit {
     font-size: 1.4rem;
-    padding: 1rem;
+  }
+
+  .background {
+    display: none; /* Hide background shapes for clean mobile view */
   }
 }
