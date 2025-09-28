@@ -240,6 +240,19 @@ section {
     padding: 0.8rem 1.5rem;
     font-size: 1rem;
   }
+
+  .about_image{
+    flex-direction: column;
+    display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+  }
 }
 
 .sub-heading {
@@ -291,6 +304,10 @@ section {
 
 .about .image img {
   width: 100%;
+}
+
+.about_image{
+  float: right;
 }
 
 .about .content {
@@ -1074,14 +1091,6 @@ a {
   margin-top: 75px;
    margin-left: 50px;
 }
-
-.about_image{
-  
-  float: right;
-  
-
-}
-
 
 /* coming soon css */
 .background {
