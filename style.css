@@ -255,6 +255,155 @@ section {
   }
 }
 
+/*try to apply mobile responsibility
+/* ===============================
+   Improved Mobile Responsive CSS
+   =============================== */
+
+/* Tablets and below (≤1024px) */
+@media (max-width: 1024px) {
+  .wrapper {
+    width: 95%;
+    height: auto;
+    font-size: 3rem;
+    padding: 2rem;
+  }
+
+  .wrapper .about {
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  .footer-image {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* Large Phones and below (≤768px) */
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 1rem 2rem;
+  }
+
+  .top-row h1 {
+    font-size: 3.5rem;
+  }
+
+  .content h3 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .content p {
+    font-size: 1.3rem;
+    line-height: 2;
+  }
+
+  .bottom-row {
+    flex-direction: column;
+  }
+
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about .content h3 {
+    font-size: 3rem;
+  }
+
+  .about-text,
+  .FAS {
+    width: 100%;
+    margin: 2rem auto;
+  }
+
+  .wrapper {
+    width: 90%;
+    height: auto;
+    font-size: 2rem;
+  }
+
+  .wrapper .about {
+    font-size: 4rem;
+  }
+
+  .video {
+    width: 100%;
+    height: auto;
+  }
+
+  .contact .row {
+    flex-direction: column;
+  }
+
+  .contact .row .map,
+  .contact .row form {
+    flex: 1 1 100%;
+  }
+}
+
+/* Small Phones (≤480px) */
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+
+  .header .logo {
+    font-size: 2rem;
+  }
+
+  .header .navbar ul li a {
+    padding: 1.2rem;
+    font-size: 1.5rem;
+  }
+
+  .top-row h1 {
+    font-size: 2.5rem;
+  }
+
+  .wrapper {
+    width: 95%;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+  }
+
+  .wrapper .about {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .footer-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .sub-heading,
+  .section-heading {
+    font-size: 2rem;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .container td, .container th {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+}
+
+*/
+
+
+
+
 .sub-heading {
   font-size:26px;
 }
