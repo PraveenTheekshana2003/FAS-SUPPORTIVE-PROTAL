@@ -274,16 +274,19 @@ section {
   margin: 0 auto;
   text-align: center;      /* center headings */
   display: block;
+  font-size: 3rem;
+  flex-direction: column;
 }
 
 .about-paragraph {
   width: 100%;
   font-size: 1.4rem;
   line-height: 1.7;
-  text-align: justify;     /* better readability on narrow screens */
+  text-align: center;     /* better readability on narrow screens */
   margin: 1rem auto 0;
   display: block;
-  padding: 0 1rem;         /* add breathing space on left/right */
+  padding: 0 1rem;        /* add breathing space on left/right */
+  flex-direction: column;       
 }
 
 .contributor {
