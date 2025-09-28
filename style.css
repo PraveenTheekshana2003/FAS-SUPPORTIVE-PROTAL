@@ -256,149 +256,110 @@ section {
 }
 
 /*try to apply mobile responsibility*/
-/* ===============================
-   Improved Mobile Responsive CSS
-   =============================== */
+/* ================================
+   Responsive Styling for About Us
+   ================================ */
 
-/* Tablets and below (≤1024px) */
-@media (max-width: 1024px) {
-  .wrapper {
-    width: 95%;
-    height: auto;
-    font-size: 3rem;
-    padding: 2rem;
-  }
-
-  .wrapper .about {
-    font-size: 5rem;
-    text-align: center;
-  }
-
-  .footer-image {
-    width: 200px;
-    height: 200px;
-  }
+/* Base (mobile-first) */
+.about_image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
-/* Large Phones and below (≤768px) */
-@media (max-width: 768px) {
-  html {
-    font-size: 55%;
+.about-text {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.about-paragraph {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  text-align: justify;
+  padding: 0 1rem;
+}
+
+.contributor {
+  display: inline-block;
+  width: 100%;
+  max-width: 90%;
+  margin: 1.5rem auto;
+  font-size: 1.4rem;
+  padding: 0.8rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.FAS {
+  width: 100%;
+  max-width: 95%;
+  margin: 2rem auto;
+  text-align: center;
+  padding: 1rem;
+}
+
+.FAS p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  width: 100%;
+}
+
+/* ================================
+   Tablets (≥768px)
+   ================================ */
+@media (min-width: 768px) {
+  .about-text {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
   }
 
-  .header {
-    padding: 1rem 2rem;
+  .about-paragraph {
+    font-size: 1.6rem;
   }
 
-  .top-row h1 {
-    font-size: 3.5rem;
+  .contributor {
+    max-width: 450px;
+    font-size: 1.6rem;
   }
 
-  .content h3 {
-    font-size: 2.5rem;
-    text-align: center;
-  }
-
-  .content p {
-    font-size: 1.3rem;
-    line-height: 2;
-  }
-
-  .bottom-row {
-    flex-direction: column;
-  }
-
-  .about {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about .content h3 {
-    font-size: 3rem;
-  }
-
-  .about-text,
   .FAS {
-    width: 100%;
-    margin: 2rem auto;
+    max-width: 80%;
+    text-align: left;
   }
 
-  .wrapper {
-    width: 90%;
-    height: auto;
-    font-size: 2rem;
-  }
-
-  .wrapper .about {
-    font-size: 4rem;
-  }
-
-  .video {
-    width: 100%;
-    height: auto;
-  }
-
-  .contact .row {
-    flex-direction: column;
-  }
-
-  .contact .row .map,
-  .contact .row form {
-    flex: 1 1 100%;
-  }
-}
-
-/* Small Phones (≤480px) */
-@media (max-width: 480px) {
-  html {
-    font-size: 50%;
-  }
-
-  .header .logo {
-    font-size: 2rem;
-  }
-
-  .header .navbar ul li a {
-    padding: 1.2rem;
+  .FAS p {
     font-size: 1.5rem;
   }
+}
 
-  .top-row h1 {
-    font-size: 2.5rem;
+/* ================================
+   Desktops (≥1024px)
+   ================================ */
+@media (min-width: 1024px) {
+  .about_image {
+    max-width: 50%;
+    margin: 0 auto 2rem;
   }
 
-  .wrapper {
-    width: 95%;
-    padding: 1.5rem;
+  .about-text {
+    width: 70%;
+  }
+
+  .about-paragraph {
     font-size: 1.8rem;
   }
 
-  .wrapper .about {
-    font-size: 2.5rem;
-    text-align: center;
+  .FAS {
+    max-width: 65%;
   }
 
-  .footer-image {
-    width: 150px;
-    height: 150px;
-  }
-
-  .sub-heading,
-  .section-heading {
-    font-size: 2rem;
-  }
-
-  .container {
-    width: 100%;
-    padding: 0;
-  }
-
-  .container td, .container th {
-    font-size: 1.2rem;
-    padding: 0.5rem;
+  .FAS p {
+    font-size: 1.6rem;
   }
 }
-
 /* end of mobile responsibility */
 
 
