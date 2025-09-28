@@ -272,21 +272,18 @@ section {
   width: 100%;
   padding: 1rem;
   margin: 0 auto;
-  text-align: center;      /* center headings */
+  text-align: justify;      /* center headings */
   display: block;
   font-size: 3rem;
-  flex-direction: column;
 }
 
 .about-paragraph {
   width: 100%;
   font-size: 1.4rem;
-  line-height: 1.7;
-  text-align: center;     /* better readability on narrow screens */
+  text-align: justify;     /* better readability on narrow screens */
   margin: 1rem auto 0;
   display: block;
-  padding: 0 1rem;        /* add breathing space on left/right */
-  flex-direction: column;       
+  padding: 0 1rem;       
 }
 
 .contributor {
